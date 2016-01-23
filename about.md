@@ -4,12 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+My name's Yazin Alirhayim, and I'm a technology entrepreneur that likes to do cool stuff. Currently, I'm working [in payments](https://start.payfort.com) and messing around with [Machine Learning](http://juststartedlearning.com/) and [Drones](https://docs.google.com/document/d/1wiybt0HC7_FvAh9dJlNHc-NKZmy9yW9xnoym52GLbW4/)
