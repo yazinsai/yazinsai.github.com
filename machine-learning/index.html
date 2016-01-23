@@ -6,7 +6,7 @@ layout: default
   <h1 class="page-heading">Machine Learning</h1>
 
   <ul class="post-list">
-    {% for post in site.categories.machine-learning %}
+    {% for post in site.categories.machine-learning reversed %}
       <li>
         <h2 style="margin-bottom: 3px;">
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
