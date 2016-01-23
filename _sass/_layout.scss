@@ -167,13 +167,15 @@
 /**
  * Page content
  */
-.page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
+// Messes up the display when you want an index.html that contains the entire
+// content of the posts -- removing for now. / Yazin
+// .page-content {
+//     padding: $spacing-unit 0;
+// }
+//
+// .page-heading {
+//     font-size: 20px;
+// }
 
 .post-list {
     margin-left: 0;
@@ -184,15 +186,16 @@
     }
 }
 
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
+// Same things (see above) / Yazin
+// .post-meta {
+//     font-size: $small-font-size;
+//     color: $grey-color;
+// }
+//
+// .post-link {
+//     display: block;
+//     font-size: 24px;
+// }
 
 
 

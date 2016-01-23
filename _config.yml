@@ -18,3 +18,9 @@ permalink: /:categories/:title/
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+  machine-learning:
+    output: true
+    permalink: /machine-learning/:path/

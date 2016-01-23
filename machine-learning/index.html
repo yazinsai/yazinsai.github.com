@@ -1,0 +1,28 @@
+---
+layout: machine-learning
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Machine Learning</h1>
+
+  <ul class="post-list">
+    {% for post in site.machine-learning %}
+      {% unless post.url == '/machine-learning/index/' %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2 style="margin-bottom: 3px;">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <div class="post-content">
+            {{ post.content }}
+          </div>
+        </li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
