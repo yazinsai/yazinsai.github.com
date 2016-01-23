@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Some Basic definitions"
-date:   2015-12-22 20:52:10 +0400
+date:   2015-12-22
+categories: machine-learning
 excerpt: |
   Today, I learned a bunch of variable definitions that are used quite a bit
   when defining the kind of problem we're trying to solve with Machine Learning.

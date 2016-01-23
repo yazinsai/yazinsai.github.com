@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Ahoy there!"
-date:   2015-12-13 10:52:10 +0400
+date:   2015-12-13
+categories: machine-learning
 excerpt: |
   This is an introductory post, where I cover part of the motivation why I'm
   writing these posts. It also covers the reasons why a computer engineer, with

@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "First Post! The Types of Machine Learning"
-date:   2015-12-22 10:52:10 +0400
+date:   2015-12-22
+categories: machine-learning
 excerpt: |
   In this first post, I learn the different types of Machine Learning, getting
   an idea in the process of what Machine Learning can and cannot do.

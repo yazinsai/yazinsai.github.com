@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Multivariate Linear Regression"
-date:   2016-01-13 20:40:10 +0400
+date:   2016-01-13
+categories: machine-learning
 excerpt: |
   Ah, now things start to get more complicated. We'd previously taken the most basic case where we only have one feature, and one output we're trying to predict -- with a linear relationship connecting them. Now, we start considering what happens when we have multiple features.
 ---

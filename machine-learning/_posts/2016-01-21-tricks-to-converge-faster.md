@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Tricks to make Gradient Descent converge faster"
-date:   2016-01-21 22:10:10 +0400
+date:   2016-01-21
+categories: machine-learning
 excerpt: |
   Here, we talk about a couple of tricks that you can use to optimize your gradient descent .. and make it run with fewer iterations, hence reducing the number of calculation cycles and doing your bit to save the planet.
 ---

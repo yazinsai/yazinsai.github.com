@@ -1,16 +1,9 @@
----
-layout: machine-learning
----
-
 <div class="home">
 
   <h1 class="page-heading">Machine Learning</h1>
 
   <ul class="post-list">
-    {% for post in site.machine-learning %}
-      {% if post.url == '/machine-learning/index/' %}
-        {% continue %}
-      {% endif %}
+    {% for post in site.categories.machine-learning %}
       <li>
         <h2 style="margin-bottom: 3px;">
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

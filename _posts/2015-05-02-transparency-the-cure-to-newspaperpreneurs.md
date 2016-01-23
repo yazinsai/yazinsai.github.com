@@ -2,7 +2,7 @@
 layout: post
 title:  "Transparency, the cure to newspaperpreneurs"
 date:   2015-05-03 09:23:50 +0400
-categories:
+categories: blog
 excerpt: |
   We've all seen it: front page headlines of "visionaries" gazing into the abyss .. every sentence attesting to the incredible success that he/she's been able to conjure in the face adversity.
 ---

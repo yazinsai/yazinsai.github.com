@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Gradient Descent"
-date:   2015-12-24 17:52:10 +0400
+date:   2015-12-24
+categories: machine-learning
 excerpt: |
   Gradient Descent is at the core of machine learning, and I've seen it mentioned in every single machine learning publication I've read. In this post, we'll cover what the heck it is and how it's used.
 ---
