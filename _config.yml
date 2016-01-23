@@ -11,9 +11,10 @@ email: i@yaz.in
 description: > # this means to ignore newlines until "baseurl:"
   Technology entrepreneur that loves to do stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yaz.in/" # the base hostname & protocol for your site
+url: "http://yaz.in" # the base hostname & protocol for your site
 twitter_username: yazinsai
 github_username:  yazinsai
+permalink: /:categories/:title/
 
 # Build settings
 markdown: kramdown
