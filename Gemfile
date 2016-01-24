@@ -1,4 +1,3 @@
 source 'https://rubygems.org'
-gem 'github-pages'
-gem 'jekyll'
+gem 'jekyll', '~> 3.0', '>= 3.0.2'
 gem 'rouge'
