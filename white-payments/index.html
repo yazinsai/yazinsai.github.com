@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="home">
+
+  <h1 class="page-heading">White Payments</h1>
+  <p>January 2014, I knew nothing about credit card payments. June 2015, I sold my online credit card processing payments startup to Souq.com.</p>
+
+  <ul class="post-list">
+    {% for post in site.categories.whitepayments reversed %}
+      <li>
+        <h2 style="margin-bottom: 3px;">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <div class="post-content">
+          {{ post.content }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
