@@ -23,14 +23,43 @@ The ideal feature would fit within the range \\(-1 \le x \le +1\\)
 
 Just keep in mind that this is an approximate range ( \\(-2 \le x \le 3 \\) is fine too .. but \\(-1,000 \le x \le 250\\) is **not**)
 
-Knowing what we know now, let's normalize \\(x_1, x_2\\) to fit within that range:
+Knowing what we know now, we can easily normalize \\(x_1, x_2\\) to fit within that range by doing:
 
 $$x_1 = \frac{\text{Size of bedroom}}{2000}$$
 
 $$x_2 = \frac{\text{Number of bedrooms}}{5}$$
 
+Voila, we're all done.
+
+**Note:** There's another form of normalization called "Mean normalization" where you try to center the averages. Frankly, I'm feeling way too lazy to be writing about that right now .. so we're skipping it. Read about it [here](http://www.d.umn.edu/~deoka001/Normalization.html) if you dig that sort of thing.
+
 ### Trick #2: Picking a learning rate, \\(\alpha\\)
 
-Plot # of iters vs. \\(J(\theta)\\)
+We've discussed \\(\alpha\\) before, but we haven't really talked much about how we initially decide on what value to choose.
 
-Run this plot for these values of \\(\alpha\\) .. 0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1
+Turns out, you just gotta try a bunch of values and see what works best. Rather than brute forcing every number in existence though, you can take a more visual approach.
+
+Try to plot `number of iterations` vs. \\(J(\theta)\\):
+
+![Number of iterations vs. Cost](/assets/machine-learning/tricks-plot-cost-vs-iterations.png)
+
+If your \\(J(\theta)\\) isn't decreasing after *every* iteration, then something isn't right.
+
+You can try the following values for \\(\alpha\\), starting with the smallest and moving up (until you see the values diverge):
+
+`0.001`, `0.003`, `0.01`, `0.03`, `0.1`, `0.3`, `1`
+(so basically just start at `0.001` and keep multiplying by approx. 3)
+
+### Interesting Note
+
+An interesting aside is that you can make all sorts of crazy changes to your initial data and magically conjure new features that way.
+
+The action starts with a plot of the feature itself vs. the output you're measuring:
+
+![Fitting a curve](/assets/machine-learning/tricks-fitting.png)
+
+Looking at this curve, you might think .. you know what? There kinda looks like there might be some square-root relationship going on between the \\(x\\) and the \\(y\\) .. so why don't I just use \\(\sqrt(x)\\) as a feature instead of plain old \\(x\\) (or even in addition to the \\(x\\)).
+
+That's *totally cool*. Now, you're hypothesis would look like:
+
+$$h(\theta) = \theta_0 + \theta_1 x + \theta_2 \sqrt{x}$$
