@@ -21,3 +21,11 @@ markdown: kramdown
 destination: _site
 keep_files:
   - ../assets/
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "machine-learning"
+    values:
+      timeless: "true"
