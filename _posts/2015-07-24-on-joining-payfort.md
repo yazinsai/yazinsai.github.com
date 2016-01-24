@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "On joining Payfort"
+title:  On joining Payfort
 date:   2015-07-24 09:23:50 +0400
 categories: blog
+permalink: /on-joining-payfort
 excerpt: |
   “How hard could it possibly be?”, I remember thinking. Boy was I in for a treat.
 ---

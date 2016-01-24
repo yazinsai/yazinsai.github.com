@@ -3,6 +3,7 @@ layout: post
 title:  "Playing fortune teller"
 date:   2015-05-12 09:23:50 +0400
 categories: blog
+permalink: /playing-fortune-teller
 excerpt: |
   I've been spending some time lately thinking about things on a grander scale, trying to understand where we are today .. and where we might be headed.
 ---
