@@ -1,3 +1,7 @@
 .main-header {
-  background-color: $header-bg-color;
+
+  .top-border {
+    height: 13px;
+    background: linear-gradient(to right, #ff6d00, #FFCC00);
+  }
 }
