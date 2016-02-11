@@ -1,23 +1,21 @@
 ---
 layout: default
 ---
-
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.categories.blog %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2 style="margin-bottom: 3px;">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        {{ post.excerpt }}
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="flex-parent">
+    <div class="flex-item">
+      <a href="/blog/">blog</a>
+    </div>
+    <div class="flex-item">
+      <a href="/quran/">islam</a>
+    </div>
+    <div class="flex-item">
+      <a href="/machine-learning/">machine learning</a>
+    </div>
+  </div>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
