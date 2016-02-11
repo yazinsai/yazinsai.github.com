@@ -1,13 +1,17 @@
 .page-index {
 
   .flex-categories {
-    a {
-      text-decoration: none;
+    .category {
+      text-align: center;
 
-      img {
-        display: block;
-        max-width: 200px;
-        max-height: 200px;
+      a {
+        text-decoration: none;
+
+        img {
+          display: block;
+          max-width: 200px;
+          max-height: 200px;
+        }
       }
     }
   }
