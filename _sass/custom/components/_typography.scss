@@ -1,0 +1,8 @@
+a {
+  color: $orange;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
