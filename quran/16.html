@@ -8,8 +8,15 @@ layout: default
   <p>I'm not really sure why I picked this chapter to start with &mdash; it just seemed right at the time. Here's a breakdown of the different posts I've written on this chapter, broken down by verse:</p>
 
   <ul>
+    {% capture freshstart %}{{'now' | date: '%s' | minus: 86400 }}{% endcapture %}
     {% for post in site.categories.16 reversed %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        {% capture posttime %}{{post.date | date: '%s' | plus: 0}}{% endcapture %}
+        {% if posttime > freshstart %}
+          <span class="label label-success">FRESH!</span>
+        {% endif %}
+      </li>
     {% endfor %}
   </ul>
 
