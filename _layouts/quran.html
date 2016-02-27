@@ -20,7 +20,6 @@
     {% include footer.html %}
 
     <script>
-    // Replace ## with arabic equivalents
     String.prototype.toArabicDigits= function(){
      var id= ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
      return this.replace(/[0-9]/g, function(w){
@@ -33,7 +32,7 @@
     var verse = verseElem.innerHTML;
 
     // Update the aya format from '{##}'
-    verse = verse.replace(/{(\d+)}/g, "۝ $1");
+    verse = verse.replace(/{(\d+)}/g, "<span class='verse-number'>۝ $1</span>");
     verse = verse.toArabicDigits();
 
     // Put it back in
