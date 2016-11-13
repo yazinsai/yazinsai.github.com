@@ -1,0 +1,8 @@
+<script>
+/* permanently redirect all traffic to new domain, keeping the path */
+var pattern, results, urlPathname;
+pattern = /^https?:\/\/(.*?)(\/.*)$/i;
+results = pattern.exec(window.location.toString());
+urlPathname = results[results.length - 1];
+window.location.replace('https://yazin.org' + urlPathname);
+</script>
