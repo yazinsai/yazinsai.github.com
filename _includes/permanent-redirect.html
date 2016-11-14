@@ -1,8 +1,62 @@
+<style type="text/css">
+.spinner {
+  margin: 100px auto 50px;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+</style>
 <script>
+var newUrl = "https://yazin.org";
+
 /* block display */
 document.body.innerHTML += `
-  <div style="position:absolute; top: 0; left: 0; margin: 0; padding: 0; width: 100%; height: 100%; background: #fff;">
-    Redirecting to new site: <a href="https://yazin.org/">yazin.org</a>
+  <div style="position:absolute; top: 0; left: 0; margin: 0; padding: 0; width: 100%; height: 100%; background: #fff; display: flex; justify-content: center;
+  align-items: center;">
+    <div>
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+
+      <div>Redirecting to new site: <a href="https://yazin.org/">yazin.org</a></div>
+    </div>
   </div>`;
 
 /* permanently redirect all traffic to new domain, keeping the path */
@@ -10,5 +64,9 @@ var pattern, results, urlPathname;
 pattern = /^https?:\/\/(.*?)(\/.*)$/i;
 results = pattern.exec(window.location.toString());
 urlPathname = results[results.length - 1];
-window.location.replace('https://yazin.org' + urlPathname);
+
+/* wait for 3 seconds, then redirect */
+window.setTimeout(function(){
+  window.location.replace('https://yazin.org' + urlPathname);
+}, 3000);
 </script>
