@@ -1,4 +1,10 @@
 <script>
+/* block display */
+document.body.innerHTML += `
+  <div style="position:absolute; top: 0; left: 0; margin: 0; padding: 0; width: 100%; height: 100%; background: #fff;">
+    Redirecting to new site: <a href="https://yazin.org/">yazin.org</a>
+  </div>`;
+
 /* permanently redirect all traffic to new domain, keeping the path */
 var pattern, results, urlPathname;
 pattern = /^https?:\/\/(.*?)(\/.*)$/i;
